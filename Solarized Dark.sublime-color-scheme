@@ -1,0 +1,536 @@
+{
+    "name": "Solarized (dark)",
+    "variables": {
+        // Solarized color scheme
+        // http://ethanschoonover.com/solarized#the-values
+
+        // Background/Foreground Tones
+        "base03": "#002b36",
+        "base02": "#073642",
+
+        "base02_lighten_2": "#0C3B47",
+        "base02_ligthen_20": "#3A6975",
+
+        "base02_on_base03_50": "#2c4c55",
+
+        // Content Tones
+        "base01": "#586e75",
+        "base00": "#657b83",
+        "base0": "#839496",
+        "base1": "#93a1a1",
+
+        // Background/Foreground Tones
+        "base2": "#eee8d5",
+        "base3": "#fdf6e3",
+
+        // Accent Colors
+        "yellow": "#b58900",
+        "orange": "#cb4b16",
+        "red": "#dc322f",
+        "magenta": "#d33682",
+        "violet": "#6c71c4",
+        "blue": "#268bd2",
+        "cyan": "#2aa198",
+        "green": "#859900"
+    },
+    "globals":
+    {
+        "background": "var(base03)",
+        "foreground": "var(base0)",
+        "caret": "var(base2)",
+        "gutter": "var(base03)",
+        "invincibles": "var(base01)",
+        "line_highlight": "var(base02)",
+        "selection": "var(base02_on_base03_50)",
+        "selection_border": "var(base01)",
+        // "highlight": "var(cyan)",
+        // "find_highlight": "var(base03)",
+        // "find_highlight_foreground": "var(base0)"
+    },
+    "rules": [
+        {
+            "name": "Comment",
+            "scope": "comment, meta.documentation",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Regexp",
+            "scope": "string.regexp",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Escape char",
+            "scope": "constant.character.escape",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Import",
+            "scope": "meta.import keyword, keyword.control.import, keyword.control.import.from, keyword.other.import, keyword.control.at-rule.include, keyword.control.at-rule.import",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Arithmetical, Assignment, Comparision Operators",
+            "scope": "keyword.operator.comparison, keyword.operator.assignment, keyword.operator.arithmetic",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Class",
+            "scope": "keyword.control.class, meta.class, entity.name.class, entity.name.type.class",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Library class",
+            "scope": "support.type, support.class",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Variable start",
+            "scope": "punctuation.definition.variable",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language, meta.preprocessor",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Support.construct",
+            "scope": "support.function.construct, keyword.other.new",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Tag start/end",
+            "scope": "punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Continuation",
+            "scope": "punctuation.separator.continuation",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Storage Type",
+            "scope": "storage.type",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Exception",
+            "scope": "support.type.exception",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Special",
+            "scope": "keyword.other.special-method",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "background": "var(cyan)"
+        },
+        {
+            "name": "Quoted String",
+            "scope": "string.quoted.double, string.quoted.single",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Quoted Single",
+            "scope": "punctuation.definition.string.begin, punctuation.definition.string.end",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "[]",
+            "scope": "meta.brace.square",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "()",
+            "scope": "meta.brace.round, punctuation.definition.parameters.begin, punctuation.definition.parameters.end",
+            "foreground": "var(base00)"
+        },
+        {
+            "name": "{}",
+            "scope": "meta.brace.curly",
+            "foreground": "var(base00)"
+        },
+        {
+            "name": "CSS: Standard color value",
+            "scope": "support.constant.color, invalid.deprecated.color.w3c-non-standard-color-name.scss",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "CSS: Selector > [] and non-spec tags",
+            "scope": "meta.selector.css",
+            "foreground": "var(base00)"
+        },
+        {
+            "name": "CSS: Tag",
+            "scope": "entity.name.tag.css, entity.name.tag.scss, source.less keyword.control.html.elements, source.sass keyword.control.untitled",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "CSS .class",
+            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.class.sass",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "CSS: #id",
+            "scope": "source.css entity.other.attribute-name.id, source.less entity.other.attribute-name.id, source.scss entity.other.attribute-name.id, source.sass entity.other.attribute-name.id",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "CSS :pseudo",
+            "scope": "entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.tag.pseudo-class",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "HTML: =",
+            "scope": "text.html.basic meta.tag.other.html, text.html.basic meta.tag.any.html, text.html.basic meta.tag.block.any, text.html.basic meta.tag.inline.any, text.html.basic meta.tag.structure.any.html, text.html.basic source.js.embedded.html, punctuation.separator.key-value.html",
+            "foreground": "var(base00)"
+        },
+        {
+            "name": "HTML: something=",
+            "scope": "text.html.basic entity.other.attribute-name.html, meta.tag.xml entity.other.attribute-name",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Ruby: Special Method",
+            "scope": "keyword.other.special-method.ruby",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Ruby: Constant Other",
+            "scope": "variable.other.constant.ruby",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Ruby: :symbol",
+            "scope": "constant.other.symbol.ruby",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Ruby: Special Method",
+            "scope": "keyword.other.special-method.ruby",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "PHP: Array()",
+            "scope": "meta.array support.function.construct.php",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "C: Preprocessor",
+            "scope": "entity.name.function.preprocessor.c, meta.preprocessor.c.include, meta.preprocessor.macro.c",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "C: include",
+            "scope": "meta.preprocessor.c.include string, meta.preprocessor.c.include punctuation.definition.string.begin, meta.preprocessor.c.include punctuation.definition.string.end",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Other: Removal",
+            "scope": "other.package.exclude, other.remove",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Other: Add",
+            "scope": "other.add",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Tex: {}",
+            "scope": "punctuation.section.group.tex , punctuation.definition.arguments.begin.latex, punctuation.definition.arguments.end.latex, punctuation.definition.arguments.latex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Tex: {text}",
+            "scope": "meta.group.braces.tex",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Tex: Other Math",
+            "scope": "string.other.math.tex",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Tex: {var}",
+            "scope": "variable.parameter.function.latex",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Tex: Math ",
+            "scope": "punctuation.definition.constant.math.tex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Tex: Constant Math",
+            "scope": "text.tex.latex constant.other.math.tex, constant.other.general.math.tex, constant.other.general.math.tex, constant.character.math.tex",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Tex: Other Math String",
+            "scope": "string.other.math.tex",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Tex: $",
+            "scope": "punctuation.definition.string.begin.tex, punctuation.definition.string.end.tex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Tex: label",
+            "scope": "keyword.control.label.latex, text.tex.latex constant.other.general.math.tex",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Tex: label { }",
+            "scope": "variable.parameter.definition.label.latex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Tex: Function",
+            "scope": "support.function.be.latex",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Tex: Support Function Section",
+            "scope": "support.function.section.latex",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Tex: Support Function",
+            "scope": "support.function.general.tex",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Tex: Reference Label",
+            "scope": "keyword.control.ref.latex",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Python: storage",
+            "scope": "storage.type.class.python, storage.type.function.python, storage.modifier.global.python",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Python: Support.exception",
+            "scope": "support.type.exception.python",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Shell: meta scope in loop",
+            "scope": "meta.scope.for-in-loop.shell, variable.other.loop.shell",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "Shell: Meta Block",
+            "scope": "meta.scope.case-block.shell, meta.scope.case-body.shell",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "Shell: []",
+            "scope": "punctuation.definition.logical-expression.shell",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Java: storage import",
+            "scope": "storage.modifier.import.java",
+            "foreground": "var(base1)"
+        },
+        {
+            "name": "Perl: functions",
+            "scope": "support.function.perl",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "diff: header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "diff: range",
+            "scope": "meta.diff.range",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "diff: deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "diff: changed",
+            "scope": "markup.changed",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "diff: inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Markdown heading",
+            "scope": "markup.heading, punctuation.definition.heading.markdown",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Markdown quote",
+            "scope": "markup.quote",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Markdown em",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown strong",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown reference",
+            "scope": "markup.underline.link.markdown, meta.link.reference constant.other.reference.link.markdown",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Markdown reference list",
+            "scope": "constant.other.reference.link.markdown",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Markdown linebreak",
+            "scope": "meta.paragraph.markdown meta.dummy.line-break",
+            "background": "var(base01)"
+        },
+        {
+            "name": "SublimeLinter Annotations",
+            "scope": "sublimelinter.notes",
+            "foreground": "var(base01)",
+            "background": "var(base01)"
+        },
+        {
+            "name": "SublimeLinter Error Outline",
+            "scope": "sublimelinter.outline.illegal",
+            "foreground": "var(base01)",
+            "background": "var(base01)"
+        },
+        {
+            "name": "SublimeLinter Error Underline",
+            "scope": "sublimelinter.underline.illegal",
+            "background": "var(red)"
+        },
+        {
+            "name": "SublimeLinter Warning Outline",
+            "scope": "sublimelinter.outline.warning",
+            "foreground": "var(base0)",
+            "background": "var(base0)"
+        },
+        {
+            "name": "SublimeLinter Warning Underline",
+            "scope": "sublimelinter.underline.warning",
+            "background": "var(yellow)"
+        },
+        {
+            "name": "SublimeLinter Violation Outline",
+            "scope": "sublimelinter.outline.violation",
+            "foreground": "var(base00)",
+            "background": "var(base00)"
+        },
+        {
+            "name": "SublimeLinter Violation Underline",
+            "scope": "sublimelinter.underline.violation",
+            "background": "var(orange)"
+        },
+        {
+            "name": "SublimeBracketHighlighter",
+            "scope": "brackethighlighter.all",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "Find In Files: File Name",
+            "scope": "entity.name.filename.find-in-files",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Find In Files: Line numbers",
+            "scope": "constant.numeric.line-number.find-in-files",
+            "foreground": "var(base01)"
+        },
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "SublimeLinter Warning",
+            "scope": "sublimelinter.mark.warning",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "SublimeLinter Error",
+            "scope": "sublimelinter.mark.error",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "SublimeLinter Gutter Mark",
+            "scope": "sublimelinter.gutter-mark",
+            "foreground": "var(base00)"
+        }
+    ]
+}
